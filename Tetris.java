@@ -121,6 +121,14 @@ public class Tetris extends JFrame {
 					}
 
 					break;
+				case KeyEvent.VK_X:
+					if (playing == false) {
+						PlaySound(Clap);
+					} else {
+						StopSound(currentMusic);
+					}
+
+					break;
 		
 				}
 			}
